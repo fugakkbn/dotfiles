@@ -1,0 +1,15 @@
+[user]
+	name = fugakkbn
+	email = aax.chiri@gmail.com
+[init]
+	defaultBranch = main
+[ghq]
+	root = ~/projects
+[alias]
+	sw = switch
+	sc = switch -c
+	pushf = push --force-with-lease
+	st = status
+	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
+	ba = branch -a
+	bd = branch -d
