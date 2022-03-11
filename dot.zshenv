@@ -4,6 +4,7 @@ alias dc='docker-compose'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcrc='docker-compose exec rails bin/rails c'
+alias dcbe='docker-compose exec rails bundle exec'
 alias dcbs='docker-compose exec rails bash'
 
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
