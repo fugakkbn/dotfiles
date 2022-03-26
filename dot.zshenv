@@ -1,12 +1,14 @@
 # Aliases
 alias be='bundle exec'
-alias dc='docker-compose'
-alias dcu='docker-compose up'
-alias dcd='docker-compose down'
-alias dce='(){docker-compose exec $1 $2}'
-alias dcrc='(){docker-compose exec $1 bin/rails c}'
-alias dcbe='(){docker-compose exec $1 bundle exec $2}'
-alias dcbs='(){docker-compose exec $1 bash}'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dce='(){docker compose exec $1 $2}'
+alias dcrc='(){docker compose exec $1 bin/rails c}'
+alias dcbe='(){docker compose exec $1 bundle exec $2}'
+alias dcbs='(){docker compose exec $1 bash}'
+
+alias gpr='(){git pull --rebase origin $1}'
 
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
