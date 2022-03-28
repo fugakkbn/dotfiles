@@ -10,6 +10,10 @@
 	sc = switch -c
 	pushf = push --force-with-lease
 	st = status
+	lp = log -p
 	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
 	ba = branch -a
 	bd = branch -d
+	sh = stash
+	sl = stash list
+	sp = stash pop
