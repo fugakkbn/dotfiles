@@ -8,8 +8,6 @@ alias dcrc='(){docker compose exec $1 bin/rails c}'
 alias dcbe='(){docker compose exec $1 bundle exec $2}'
 alias dcbs='(){docker compose exec $1 bash}'
 
-alias gpr='(){git pull --rebase origin $1}'
-
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:/Users/fugakkbn/.nodebrew/current/bin

@@ -14,6 +14,7 @@
 	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
 	ba = branch -a
 	bd = branch -d
-	sh = stash
+	su = stash -u
 	sl = stash list
 	sp = stash pop
+	pr = pull --rebase origin
