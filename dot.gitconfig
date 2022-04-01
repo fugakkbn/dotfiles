@@ -8,7 +8,9 @@
 [alias]
 	sw = switch
 	sc = switch -c
-	pushf = push --force-with-lease
+	ri = rebase -i
+	pr = pull --rebase origin
+	pf = push --force-with-lease origin
 	st = status
 	lp = log -p
 	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
@@ -17,4 +19,3 @@
 	su = stash -u
 	sl = stash list
 	sp = stash pop
-	pr = pull --rebase origin
