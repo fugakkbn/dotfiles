@@ -1,4 +1,6 @@
 # Aliases
+alias rs='bin/rails s'
+alias rc='bin/rails c'
 alias be='bundle exec'
 alias dc='docker compose'
 alias dcu='docker compose up'

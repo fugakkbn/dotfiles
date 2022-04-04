@@ -6,11 +6,13 @@
 [ghq]
 	root = ~/projects
 [alias]
+	ca = commit -am
+	cm = commit -m
 	sw = switch
 	sc = switch -c
 	ri = rebase -i
-	pr = pull --rebase origin
-	pf = push --force-with-lease origin
+	pr = pull --rebase
+	pf = push --force-with-lease
 	st = status
 	lp = log -p
 	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
