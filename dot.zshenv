@@ -1,4 +1,5 @@
 # Aliases
+alias g='git'
 alias rs='bin/rails s'
 alias rc='bin/rails c'
 alias be='bundle exec'

@@ -6,11 +6,13 @@
 [ghq]
 	root = ~/projects
 [alias]
+  ad = add
 	ca = commit -am
 	cm = commit -m
+  cf = commit -v --fixup=HEAD
 	sw = switch
 	sc = switch -c
-	ri = rebase -i
+	ri = !sh -c 'git rebase -i HEAD~$0'
 	pr = pull --rebase
 	pf = push --force-with-lease
 	st = status
