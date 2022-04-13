@@ -36,3 +36,19 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+# peco で ctrl + h に実行コマンド検索をバインド
+function peco-select-history() {
+  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+}
+zle -N peco-select-history
+bindkey '^h' peco-select-history
+
+# peco で ff にファイル検索をバインド
+function peco-find-file-name() {
+  BUFFER=$(find . -name "*${1}*" | grep -v "/\." | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+}
+zle -N peco-find-file-name
+bindkey 'ff' peco-find-file-name
