@@ -1,25 +1,26 @@
 [user]
-	name = fugakkbn
-	email = aax.chiri@gmail.com
+  name = fugakkbn
+  email = aax.chiri@gmail.com
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [ghq]
-	root = ~/projects
+  root = ~/projects
 [alias]
   ad = add
-	ca = commit -am
-	cm = commit -m
+  ca = commit -am
+  cm = commit -m
   cf = commit -v --fixup=HEAD
-	sw = switch
-	sc = switch -c
-	ri = !sh -c 'git rebase -i HEAD~$0'
-	pr = pull --rebase
-	pf = push --force-with-lease
-	st = status
-	lp = log -p
-	lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
-	ba = branch -a
-	bd = branch -d
-	su = stash -u
-	sl = stash list
-	sp = stash pop
+  cn = commit --amend
+  sw = switch
+  sc = switch -c
+  ri = !sh -c 'git rebase -i HEAD~$0'
+  pr = pull --rebase
+  pf = push --force-with-lease
+  st = status
+  lp = log -p
+  lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
+  ba = branch -a
+  bd = branch -d
+  su = stash -u
+  sl = stash list
+  sp = stash pop
