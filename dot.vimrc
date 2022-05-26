@@ -12,6 +12,9 @@ set guifontwide=DroidSansMono\ Nerd\ Font\ 13
 
 syntax enable
 
+" Esc key bind
+inoremap jk <Esc>
+
 " -------------------------------
 " NeoBundle
 " -------------------------------
