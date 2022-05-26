@@ -1,5 +1,6 @@
 # Aliases
 alias g='git'
+alias n='nvim'
 alias rs='bin/rails s'
 alias rc='bin/rails c'
 alias be='bundle exec'
