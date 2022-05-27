@@ -1,5 +1,7 @@
 # Aliases
 alias g='git'
+alias gcf='git commit --fixup'
+alias gri='git rebase -i'
 alias n='nvim'
 alias rs='bin/rails s'
 alias rc='bin/rails c'
