@@ -14,9 +14,9 @@
   sw = switch
   sc = switch -c
   ri = !sh -c 'git rebase -i HEAD~$0'
-  plo = pull origin
+  pl = pull
   pr = pull --rebase
-  pso = push origin
+  ps = push
   pf = push --force-with-lease
   st = status
   lp = log -p
