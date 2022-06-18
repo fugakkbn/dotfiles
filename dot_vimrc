@@ -12,12 +12,10 @@ set guifontwide=DroidSansMono\ Nerd\ Font\ 13
 
 syntax enable
 
-" Esc key bind
+" Esc key bind ===========================
 inoremap jk <Esc>
 
-" -------------------------------
-" NeoBundle
-" -------------------------------
+" NeoBundle ===========================
 if has('vim_starting')
   if &compatible
     set nocompatible
@@ -31,14 +29,14 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 
-" do end などを自動で閉じる
+" do end などを自動で閉じる ===========================
 NeoBundle 'tpope/vim-endwise'
 
 call neobundle#end()
 
 NeoBundleCheck
 
-" Plugin Settings
+" Plugin Settings ===========================
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -48,19 +46,35 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
  
 call plug#end()
 
-" コードジャンプ
+" telescope SETTINGS ===========================
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" コードジャンプ ===========================
 nmap <silent> gd <Plug>(coc-definition)
 
-" NERDTree SETTINGS
+" NERDTree SETTINGS ===========================
 nmap <C-f> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
 
-" Airline SETTINGS
+" Airline SETTINGS ===========================
 let g:airline_powerline_fonts = 1
 
 " /// Enable Netrw (default file browser)
@@ -74,10 +88,10 @@ let g:airline_powerline_fonts = 1
 " let g:netrw_timefmt = "%Y/%m/%d(%a) %H:%M:%S"
 " let g:netrw_preview = 1
 
-"/// SPLIT BORDER SETTINGS
+"/// SPLIT BORDER SETTINGS ===========================
 hi VertSplit cterm=none
 
-" LanguageServerの候補をTabで選択できるようにする
+" LanguageServerの候補をTabで選択 ===========================
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -88,6 +102,6 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-" coc.nvimとaleを連携する
+" coc.nvimとaleを連携する ===========================
 let g:ale_disable_lsp = 1
 let g:ale_lint_on_text_changed = 1

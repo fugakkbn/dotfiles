@@ -1,0 +1,17 @@
+source $HOME/.zshenv
+
+export BTB_DOCKER='/Users/fugakkbn/projects/ghe.redmage.io/directscout/btb-docker'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/fugakkbn/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/fugakkbn/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/fugakkbn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fugakkbn/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Kaigi on Rails Sponser App
+export ORG_NAME="local"
+export BACKDOOR_SECRET="secret"
+export GITHUB_REPO="foo/bar"
+export GOOGLE_CLOUD_CREDENTIALS="/Users/fugakkbn/projects/kaigionrails-sponsor-app-22b0b9b32835.json"
+export S3_FILES_BUCKET="kor-sponsor-app-sandbox"
+export S3_FIELS_PREFIX="fugakkbn"
