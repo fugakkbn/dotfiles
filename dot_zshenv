@@ -18,6 +18,7 @@ alias dce='(){docker compose exec $1 $2}'
 alias dcrc='(){docker compose exec $1 bin/rails c}'
 alias dcbe='(){docker compose exec $1 bundle exec $2}'
 alias dcbs='(){docker compose exec $1 bash}'
+alias ce='chezmoi edit'
 
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
