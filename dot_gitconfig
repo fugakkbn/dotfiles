@@ -11,7 +11,7 @@
   cm = commit -m
   cf = commit -v --fixup=HEAD
   cn = commit --amend
-  sw = switch
+  s = switch
   sc = switch -c
   ri = !sh -c 'git rebase -i HEAD~$0'
   rc = rebase --continue
