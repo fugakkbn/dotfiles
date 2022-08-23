@@ -52,10 +52,10 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^h' peco-select-history
 
-# peco で ff にファイル検索をバインド
+# peco で ctrl + s にファイル検索をバインド
 function peco-find-file-name() {
   BUFFER=$(find . -name "*${1}*" | grep -v "/\." | peco --query "$LBUFFER")
   CURSOR=$#BUFFER
 }
 zle -N peco-find-file-name
-bindkey 'ff' peco-find-file-name
+bindkey '^s' peco-find-file-name
