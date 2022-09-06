@@ -25,6 +25,7 @@
   lol = log --graph --decorate --pretty=oneline --all --abbrev-commit
   ba = branch -a
   bd = branch -d
+  bdd = branch -D
   su = stash -u
   sl = stash list
   sp = stash pop
