@@ -29,5 +29,6 @@
   su = stash -u
   sl = stash list
   sp = stash pop
+  rs = !sh -c 'git reset HEAD~$0'
 [core]
 	editor = nvim
