@@ -26,6 +26,7 @@
   ba = branch -a
   bd = branch -d
   bdd = branch -D
+  bm = branch -M
   su = stash -u
   sl = stash list
   sp = stash pop
