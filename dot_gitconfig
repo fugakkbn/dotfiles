@@ -31,5 +31,6 @@
   sl = stash list
   sp = stash pop
   rs = !sh -c 'git reset HEAD~$0'
+  ch = cherry-pick
 [core]
   editor = nvim
