@@ -15,6 +15,7 @@
   sc = switch -c
   ri = !sh -c 'git rebase -i HEAD~$0'
   rc = rebase --continue
+  rh = reset HEAD^
   pl = pull
   pr = pull --rebase
   ps = push
