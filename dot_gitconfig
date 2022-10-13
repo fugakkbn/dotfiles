@@ -34,5 +34,6 @@
   rs = !sh -c 'git reset HEAD~$0'
   re = restore
   cp= cherry-pick
+  rv = remote -v
 [core]
   editor = nvim
