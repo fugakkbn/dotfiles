@@ -33,6 +33,7 @@
   sp = stash pop
   rs = !sh -c 'git reset HEAD~$0'
   re = restore
+  res = restore --staged
   cp= cherry-pick
   rv = remote -v
 [core]
