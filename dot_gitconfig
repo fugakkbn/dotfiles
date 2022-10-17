@@ -16,6 +16,7 @@
   ri = !sh -c 'git rebase -i HEAD~$0'
   rc = rebase --continue
   rh = reset HEAD^
+  rs = !sh -c 'git reset HEAD~$0'
   pl = pull
   pr = pull --rebase
   ps = push
@@ -31,7 +32,6 @@
   su = stash -u
   sl = stash list
   sp = stash pop
-  rs = !sh -c 'git reset HEAD~$0'
   re = restore
   res = restore --staged
   cp= cherry-pick
