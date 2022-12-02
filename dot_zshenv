@@ -13,7 +13,6 @@ alias sv='steep validate'
 alias stc='bundle exec steep check'
 alias stv='bundle exec steep validate'
 alias rv='bundle exec rbs validate'
-alias rci='bundle exec rbs collection install'
 alias dc='docker compose'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
@@ -30,6 +29,9 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:/Users/fugakkbn/.nodebrew/current/bin
 export PATH="$PATH:/Users/fugakkbn/flutter/bin"
+
+# for WSL
+# export PATH="$HOME/.rbenv/versions/*/bin/"
 
 eval "$(starship init zsh)"
 
