@@ -28,6 +28,7 @@
   ll = log --graph --decorate --pretty=oneline --all --abbrev-commit
   ba = branch -a
   bd = branch -d
+  bv = branch -v
   bdd = branch -D
   bm = branch -M
   su = stash -u
