@@ -4,3 +4,6 @@ vendor/
 
 .byebug_history
 .DS_Store
+.envrc
+
+dump.rdb
