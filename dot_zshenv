@@ -1,6 +1,7 @@
 # Aliases
 alias mine='rubymine'
 alias g='git'
+alias ga='git config --list | grep ^alias\.'
 alias n='nvim'
 alias gg='ghq get'
 alias c='chezmoi cd'
