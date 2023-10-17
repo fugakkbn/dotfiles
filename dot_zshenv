@@ -2,37 +2,38 @@
 alias mine='rubymine'
 alias g='git'
 alias n='nvim'
+alias gg='ghq get'
+alias c='chezmoi cd'
+alias ce='chezmoi edit'
+alias ca='chezmoi apply'
+
 alias rs='bin/rails s'
 alias rc='bin/rails c'
 alias rcs='bin/rails c --sandbox'
+alias dm='bin/rails db:migrate'
+alias dr='bin/rails db:rollback'
+
 alias be='bundle exec'
 alias bi='bundle install'
 alias cop='bundle exec rubocop'
 alias sp='bundle exec rspec'
+
 alias sc='steep check'
 alias sv='steep validate'
 alias stc='bundle exec steep check'
 alias stv='bundle exec steep validate'
 alias rv='bundle exec rbs validate'
+
 alias dc='docker compose'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
 alias dce='docker compose exec'
 alias rds='docker compose up -d redis && docker compose up -d db'
-alias c='chezmoi cd'
-alias ce='chezmoi edit'
-alias ca='chezmoi apply'
-alias dm='bin/rails db:migrate'
-alias dr='bin/rails db:rollback'
-alias gg='ghq get'
 
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:/Users/fugakkbn/.nodebrew/current/bin
 export PATH="$PATH:/Users/fugakkbn/flutter/bin"
-
-# for WSL
-# export PATH="$HOME/.rbenv/versions/*/bin/"
 
 eval "$(starship init zsh)"
 
